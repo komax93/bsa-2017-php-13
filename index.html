@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BSA-2017 / HTML - CSS</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<header class="header clearfix">
+		<div class="header__logo">
+			<a href="#" class="header__logo-link"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNDAiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojQkJERUZCO308L3N0eWxlPjwvZGVmcz48dGl0bGU+YXJyb3dBcnRib2FyZCAxPC90aXRsZT48cGF0aCBpZD0iYmluYXJ5IiBjbGFzcz0iY2xzLTEiIGQ9Ik00LjI2LDI2LjVWMjUuMDdhNC4xLDQuMSwwLDAsMCwzLjU4LDEuNzFjMy41NiwwLDYuMDctMi43OSw2LjA3LTYuNjhTMTEuNjksMTMuNDcsOCwxMy40N0E0LjU3LDQuNTcsMCwwLDAsNC4zMSwxNVY4SC41VjI2LjVaTTEwLDIwLjEzQTIuODYsMi44NiwwLDAsMSw3LjE1LDIzLjNhMi44OSwyLjg5LDAsMCwxLTIuODktMy4xN0EyLjg0LDIuODQsMCwwLDEsNy4xNSwxNywyLjgyLDIuODIsMCwwLDEsMTAsMjAuMTNabTguNzUsNi4zN1YxMy43OEgxNC44OFYyNi41Wm01LjM4LTcuMjlBMi4wNiwyLjA2LDAsMCwxLDI2LjI2LDE3YTIsMiwwLDAsMSwyLjA3LDIuMlYyNi41aDMuODl2LThjMC0yLjc5LTEuNDMtNS4wNy00LjYzLTUuMDdBNC4xNyw0LjE3LDAsMCwwLDI0LDE1LjI0VjEzLjc4SDIwLjI3VjI2LjVoMy44OVptOSwzLjc5YzAsMiwxLjYxLDMuODYsNC40LDMuODZhNCw0LDAsMCwwLDMuNTgtMS43OSw2LjIyLDYuMjIsMCwwLDAsLjEzLDEuNDNoMy41MWExMi41LDEyLjUsMCwwLDEtLjE1LTJWMTguMzFjMC0yLjYxLTEuNTEtNC45MS01LjYzLTQuOTEtMy43NCwwLTUuNDMsMi40MS01LjU4LDQuMjJsMy4zOC42OUEyLDIsMCwwLDEsMzksMTYuNDRjMS4yMywwLDEuODcuNjQsMS44NywxLjM4LDAsLjQ0LS4yMy43Ny0uOTIuODdsLTMsLjQ2QzM0Ljg2LDE5LjQ2LDMzLjE5LDIwLjc0LDMzLjE5LDIzWm01LjczLDFjLTEuMDgsMC0xLjUxLS42NC0xLjUxLTEuMzEsMC0uOS42MS0xLjI4LDEuNDMtMS40MWwyLjQxLS4zOHYuNTZDNDEuMjUsMjMuNDgsNDAuMDcsMjQsMzguOTIsMjRaTTU0LjExLDEzLjc4YTMuODQsMy44NCwwLDAsMC0xLS4xMywzLjU5LDMuNTksMCwwLDAtMy4zLDEuODRWMTMuNzhINDZWMjYuNWgzLjg5VjIwLjk1YzAtMi41MywxLjQxLTMuNDYsMy0zLjQ2YTUuMjgsNS4yOCwwLDAsMSwxLjIzLjEzWm03LjE4LDE3LjYxLDcuODMtMTcuNjFINjVsLTIuODIsNi44MS0zLjEtNi44MUg1NC43NGw1LjM1LDExLTIuODksNi42WiIvPjxwb2x5Z29uIGlkPSJQYXRoLUNvcHkiIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxOC41NyAxMi43MSAxOC41NyA4LjgyIDE0LjY4IDguODIgMTQuNjggMTIuNzEgMTguNTcgMTIuNzEiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMTUuNjQsMjUuMjVoMGEzLjMyLDMuMzIsMCwwLDEtMS43MiwxLjUsNi4zOSw2LjM5LDAsMCwxLTIuMzguNDUsNC43LDQuNywwLDAsMS0zLjI1LTEuMDUsMy4zNCwzLjM0LDAsMCwxLTEuMTctMi41OSwzLjM4LDMuMzgsMCwwLDEsMS4wNi0yLjY5LDUuNzYsNS43NiwwLDAsMSwzLjUxLTEuMDVoLjJxMi40Ny0uMTUsMy44Mi0uMlYxOC43YTMsMywwLDAsMC0uNy0yLjA4LDMuMTcsMy4xNywwLDAsMC0yLjQxLS43NiwzLjYsMy42LDAsMCwwLTIuMzEuNiwyLjc2LDIuNzYsMCwwLDAtLjkyLDEuNzJoLTEuODhhNC4xOCw0LjE4LDAsMCwxLDEuNi0yLjk1LDUuOTQsNS45NCwwLDAsMSwzLjUzLS45NCw1LjY2LDUuNjYsMCwwLDEsMy43MiwxLjA2LDMuNzUsMy43NSwwLDAsMSwxLjI3LDN2Ni4wN3EwLC41MSwwLDEuMTN0LjEyLDEuMjdoLTIuMDhabTAtNC4xOC0zLjIzLjE1YTUuMjIsNS4yMiwwLDAsMC0yLjQ3LjU5LDEuODEsMS44MSwwLDAsMC0uODMsMS42NiwxLjkzLDEuOTMsMCwwLDAsLjc2LDEuNTUsMy4xLDMuMSwwLDAsMCwyLC42Miw0Ljc4LDQuNzgsMCwwLDAsMS4zMS0uMTgsNC4yLDQuMiwwLDAsMCwxLjIxLS41NiwyLjgyLDIuODIsMCwwLDAsLjg5LTEsMi43LDIuNywwLDAsMCwuMzMtMS4zNVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMjguOTEsMTguNzJhNy44Nyw3Ljg3LDAsMCwwLS4zOC0uOTFBNC4yMiw0LjIyLDAsMCwwLDEyOCwxN2EyLjcyLDIuNzIsMCwwLDAtMS0uNywzLjQxLDMuNDEsMCwwLDAtMS40MS0uMjcsNCw0LDAsMCwwLTMuMDcsMS4zMiw1LDUsMCwwLDAtMS4yMSwzLjUsNS4yMyw1LjIzLDAsMCwwLDEuMDUsMy4zMywzLjczLDMuNzMsMCwwLDAsMy4xMywxLjM1LDMuMDcsMy4wNywwLDAsMCwyLjI1LS44LDQuNjQsNC42NCwwLDAsMCwxLjE3LTJsMiwuMjRhOC45LDguOSwwLDAsMS0uNjgsMS42MSw1LjQsNS40LDAsMCwxLTEuMDgsMS4zNyw0Ljg2LDQuODYsMCwwLDEtMS41OSwxLDYsNiwwLDAsMS0yLjEzLjM1LDYuNTMsNi41MywwLDAsMS0yLjY0LS41MSw1LjU5LDUuNTksMCwwLDEtMi0xLjQxLDYsNiwwLDAsMS0xLjItMi4wNSw3LjM2LDcuMzYsMCwwLDEtLjQtMi40Myw3LDcsMCwwLDEsLjUtMi43QTYuMTksNi4xOSwwLDAsMSwxMjEuMTIsMTZhNS44Miw1LjgyLDAsMCwxLDItMS4zLDYuNDgsNi40OCwwLDAsMSwyLjM2LS40NCw1LjkyLDUuOTIsMCwwLDEsMy41NywxLjA2LDQuNjQsNC42NCwwLDAsMSwxLjgxLDMuMTdaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQwLjQxLDI1LjI1aDBhMy4zMiwzLjMyLDAsMCwxLTEuNzIsMS41LDYuMzksNi4zOSwwLDAsMS0yLjM4LjQ1QTQuNyw0LjcsMCwwLDEsMTMzLDI2LjE2YTMuMzQsMy4zNCwwLDAsMS0xLjE3LTIuNTksMy4zOCwzLjM4LDAsMCwxLDEuMDYtMi42OSw1Ljc2LDUuNzYsMCwwLDEsMy41MS0xLjA1aC4ycTIuNDctLjE1LDMuODItLjJWMTguN2EzLDMsMCwwLDAtLjctMi4wOCwzLjE3LDMuMTcsMCwwLDAtMi40MS0uNzYsMy42LDMuNiwwLDAsMC0yLjMxLjYsMi43NiwyLjc2LDAsMCwwLS45MiwxLjcyaC0xLjg4YTQuMTgsNC4xOCwwLDAsMSwxLjYtMi45NSw1Ljk0LDUuOTQsMCwwLDEsMy41My0uOTRBNS42Niw1LjY2LDAsMCwxLDE0MSwxNS4zNmEzLjc1LDMuNzUsMCwwLDEsMS4yNywzdjYuMDdxMCwuNTEsMCwxLjEzdC4xMiwxLjI3aC0yLjA4Wm0wLTQuMTgtMy4yMy4xNWE1LjIyLDUuMjIsMCwwLDAtMi40Ny41OSwxLjgxLDEuODEsMCwwLDAtLjgzLDEuNjYsMS45MywxLjkzLDAsMCwwLC43NiwxLjU1LDMuMSwzLjEsMCwwLDAsMiwuNjIsNC43OCw0Ljc4LDAsMCwwLDEuMzEtLjE4LDQuMiw0LjIsMCwwLDAsMS4yMS0uNTYsMi44MiwyLjgyLDAsMCwwLC44OS0xLDIuNywyLjcsMCwwLDAsLjMzLTEuMzVaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTU0LDI0Ljc0aDBhOC44NSw4Ljg1LDAsMCwxLS41OS44Nyw0LjUzLDQuNTMsMCwwLDEtLjc3Ljc2LDMuODIsMy44MiwwLDAsMS0xLjE2LjYxLDQuODYsNC44NiwwLDAsMS0xLjU3LjIzLDUuODksNS44OSwwLDAsMS0yLjM0LS40Niw1LjM5LDUuMzksMCwwLDEtMS44OC0xLjMzLDYuMTYsNi4xNiwwLDAsMS0xLjI0LTIuMDcsNy40Niw3LjQ2LDAsMCwxLS40NC0yLjU5LDcuMzQsNy4zNCwwLDAsMSwuNS0yLjgzLDUuNTQsNS41NCwwLDAsMSwxLjMzLTIsNS40Niw1LjQ2LDAsMCwxLDEuODItMS4xNCw1LjcsNS43LDAsMCwxLDItLjM3LDUuNiw1LjYsMCwwLDEsMS42OS4yMyw0LjQ1LDQuNDUsMCwwLDEsMS4yNS42LDQuNjYsNC42NiwwLDAsMSwuODIuNzIsNy4xNSw3LjE1LDAsMCwxLC41Ny43N2gwVjguNDdIMTU2VjI2Ljg2SDE1NFptLTEuMTctNy4zN2E0LDQsMCwwLDAtNS42NiwwLDQuOCw0LjgsMCwwLDAtMS4xNCwzLjQ3LDUuNCw1LjQsMCwwLDAsMSwzLjM1QTMuMzksMy4zOSwwLDAsMCwxNTAsMjUuNWEzLjY3LDMuNjcsMCwwLDAsMy0xLjMzLDUsNSwwLDAsMCwxLjEtMy4zMUE0LjgxLDQuODEsMCwwLDAsMTUyLjg3LDE3LjM2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE2OS4xMiwyMy40MmE2Ljg5LDYuODksMCwwLDEtMi4yMSwyLjgsNS43LDUuNywwLDAsMS0zLjQxLDEsNS44Miw1LjgyLDAsMCwxLTIuMzItLjQ1LDUuNCw1LjQsMCwwLDEtMS44Mi0xLjI3LDUuNzQsNS43NCwwLDAsMS0xLjE5LTEuOTEsNi41NSw2LjU1LDAsMCwxLS40Mi0yLjM2LDkuMyw5LjMsMCwwLDEsLjQtMi44LDYuNTgsNi41OCwwLDAsMSwxLjE2LTIuMjEsNS4zMyw1LjMzLDAsMCwxLDQuMjgtMS45MSw1LjY0LDUuNjQsMCwwLDEsNC4yNiwxLjY1LDYuNTIsNi41MiwwLDAsMSwxLjU5LDQuNzF2LjU0SDE1OS44YTQuMzksNC4zOSwwLDAsMCwxLjA5LDMuMTcsMy41OSwzLjU5LDAsMCwwLDIuNywxLjE0LDMuNzIsMy43MiwwLDAsMCwyLjQ1LS44MSwzLjUyLDMuNTIsMCwwLDAsLjY3LS43Miw0LjA3LDQuMDcsMCwwLDAsLjQ1LS44NFptLTEuNzQtMy43OUE0LjMsNC4zLDAsMCwwLDE2Ni4yMiwxN2EzLjUxLDMuNTEsMCwwLDAtMi41OC0xLDMuODIsMy44MiwwLDAsMC0xLjYuMzIsMy40MiwzLjQyLDAsMCwwLTEuMTYuODQsNCw0LDAsMCwwLS43MiwxLjE2LDQuMjksNC4yOSwwLDAsMC0uMzEsMS4zWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE4NS44LDE5YTMuMjEsMy4yMSwwLDAsMC0uNjEtMi4xOSwzLDMsMCwwLDAtNCwuMjYsMy40MywzLjQzLDAsMCwwLS44NCwyLjR2Ny4zOWgtMS45MVYxOWEzLjI2LDMuMjYsMCwwLDAtLjYtMi4xOSwyLjUyLDIuNTIsMCwwLDAtMi0uNjcsMi43MiwyLjcyLDAsMCwwLTIuMDguOTMsMy40LDMuNCwwLDAsMC0uODYsMi40djcuMzlIMTcxVjE0LjYzaDEuODh2MmgwQTUuNTIsNS41MiwwLDAsMSwxNzQuMzMsMTVhMy43NywzLjc3LDAsMCwxLDIuMjUtLjU5LDMuODEsMy44MSwwLDAsMSwxLjM4LjIzQTMuMDksMy4wOSwwLDAsMSwxNzkuNTcsMTZhNC45MSw0LjkxLDAsMCwxLC4zOC44Miw1LjA3LDUuMDcsMCwwLDEsMS40NC0xLjc5LDMuODEsMy44MSwwLDAsMSwyLjMtLjYxLDQsNCwwLDAsMSwzLDEsNC4xNSw0LjE1LDAsMCwxLDEsM3Y4LjM3SDE4NS44WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE5My4xMywyNi42MmwtNS0xMmgyLjE4bDMuNzQsMTAuMTNoMGwzLjc3LTEwLjEzSDIwMEwxOTIuODYsMzJoLTIuMDhaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNOTMuMjIsMjEuNjNhMS45NCwxLjk0LDAsMCwwLTEuOTUsMi4xMiwyLDIsMCwxLDAsMy45LDBBMS45NCwxLjk0LDAsMCwwLDkzLjIyLDIxLjYzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTgxLjA3LDIxLjczSDc5Ljk1VjI1LjhoMS4xYTEuODEsMS44MSwwLDAsMCwxLjg0LTJBMS44MiwxLjgyLDAsMCwwLDgxLjA3LDIxLjczWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTg2LjkyLDYuM0ExMy43MiwxMy43MiwwLDEsMCwxMDAuNjUsMjAsMTMuNzIsMTMuNzIsMCwwLDAsODYuOTIsNi4zWm00LjQ2LDcuNTNoLjc0djMuNTNhMS4yLDEuMiwwLDEsMCwyLjQsMFYxMy44M2guNzV2My41NmExLjk0LDEuOTQsMCwxLDEtMy44OCwwWk04MS41LDE3bC0uNzctLjE3YTEuNDksMS40OSwwLDAsMS0xLjMyLTEuNDgsMS43MiwxLjcyLDAsMCwxLDEuNzgtMS42MUExLjcsMS43LDAsMCwxLDgzLDE1LjA1bC0uNjcuMjRhMS4xLDEuMSwwLDAsMC0xLjE0LS45MiwxLDEsMCwwLDAtMSwuOS43OC43OCwwLDAsMCwuNjkuNzhsLjgxLjE4YTEuNTYsMS41NiwwLDAsMSwxLjQsMS41MiwxLjcsMS43LDAsMCwxLTEuODcsMS42LDEuODcsMS44NywwLDAsMS0yLTEuNjFsLjcyLS4yM2ExLjIzLDEuMjMsMCwwLDAsMS4yOSwxLjE2Yy43NSwwLDEuMTEtLjM5LDEuMTEtLjg2QS44OC44OCwwLDAsMCw4MS41LDE3Wm0tLjQzLDkuNUg3OS4ydi01LjRoMS44OWEyLjUxLDIuNTEsMCwwLDEsMi41NywyLjcxQTIuNSwyLjUsMCwwLDEsODEuMDcsMjYuNDZabTYuMzgsMGgtLjc2di01LjRoLjc2Wm0xLjgtMTEuOTRoLTEuOHY0LjcxSDg2LjdWMTQuNTJIODQuOXYtLjY5aDQuMzZabTQsMTIuMDZhMi43LDIuNywwLDAsMS0yLjcxLTIuODIsMi43MSwyLjcxLDAsMSwxLDUuNDIsMEEyLjcsMi43LDAsMCwxLDkzLjIyLDI2LjU4WiIvPjwvc3ZnPg==" alt="logo" class="header__logo-image"></a>
+		</div>
+		<div class="header__menu">
+			<a href="#link1" class="header__menu-item">Link 1</a>
+			<a href="#link2" class="header__menu-item">Link 2</a>
+			<a href="#settings" class="header__menu-item"><i class="ico ico_settings"></i></a>
+		</div>
+	</header><!-- .header -->
+	<div class="main clearfix">
+		<nav class="menu">
+			<ul class="menu__container">
+				<li class="menu__item">
+					<a href="#menu-item1" class="menu__item-link">Menu item 1</a>
+				</li>
+				<li class="menu__item">
+					<a href="#menu-item2" class="menu__item-link">Menu item 2</a>
+				</li>
+				<li class="menu__item">
+					<a href="#menu-item3" class="menu__item-link">Menu item 3</a>
+				</li>
+				<li class="menu__item">
+					<a href="#menu-item4" class="menu__item-link">Menu item 4</a>
+				</li>
+			</ul>
+		</nav><!-- .menu -->
+		<div class="content clearfix">
+			<div class="block-container">
+				<div class="block">
+					<div class="block__card">
+						<h3 class="block__title">Block title 1</h3>
+						<p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusamus suscipit asperiores minima id quidem ut, corrupti consequuntur error saepe fugiat, eos enim ipsa distinctio, possimus cumque autem expedita minus.</p>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__card">
+						<h3 class="block__title">Block title 2</h3>
+						<p class="block__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolor, totam neque aliquid suscipit voluptas ab temporibus animi? Sed ut quod quas earum inventore expedita consectetur incidunt praesentium ullam? Magni.</span><span>Animi reprehenderit, culpa molestiae vero. Ex, quo ipsum officia velit nemo maiores. Quasi quo quod, eos ab quam numquam excepturi magnam, nostrum, possimus perspiciatis nobis non ad cum ratione sapiente.</span></p>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__card">
+						<h3 class="block__title">Block title 3</h3>
+						<p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cumque ea, temporibus dolorum sunt porro natus! Veniam voluptatem voluptates sunt modi.</p>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__card">
+						<h3 class="block__title">Block title 4</h3>
+						<p class="block__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eius illo, aut, eos, nesciunt quidem dolores officia eveniet vel itaque libero architecto porro soluta! Modi id ea, magni quae provident.</span>
+						<span>Explicabo perspiciatis eius quos quam accusantium magnam molestias ad quod beatae eos pariatur harum tempora quidem voluptate, ipsum consectetur, quis provident natus labore minus vitae. Dolore aut, maiores quia amet.</span>
+						<span>Placeat, minima distinctio sint facere enim recusandae molestias repellendus quia magnam rem iure sapiente, ea culpa tenetur velit saepe est et. Debitis fugiat ipsam minima officiis nisi doloribus error vel.</span></p>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__card block__card_line">
+						<h3 class="block__title">Block title 5</h3>
+						<p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quisquam voluptatum quam animi accusantium libero laborum, dolor cumque quos corporis, ipsam eaque sit optio natus, laudantium numquam quae harum debitis!</p>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__card">
+						<h3 class="block__title">Block title 6</h3>
+						<p class="block__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem distinctio tempora rerum pariatur. Eveniet a, in cum ipsum modi itaque veritatis, aliquam? Quae molestiae, eligendi maxime adipisci iusto possimus voluptas?</span><span>Nisi sapiente aliquam dolores excepturi quo amet! Dolorum animi similique et ut amet aperiam sequi harum ratione incidunt magnam delectus, dolores deserunt eos porro blanditiis. Facere magni dolorum, ab quas.</span></p>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__card">
+						<h3 class="block__title">Block title 7</h3>
+						<p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="block">					
+					<div class="block__card">
+						<h3 class="block__title">Block title 8</h3>
+						<p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta maxime fugiat, dignissimos adipisci quas aperiam delectus necessitatibus itaque dolor est, exercitationem provident sapiente! Fugiat deleniti sit, placeat dignissimos deserunt nesciunt.</p>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__card">
+						<h3 class="block__title">Block title 9</h3>
+						<p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem eos soluta repellat excepturi animi cum magni consequuntur eaque, nesciunt provident, corporis laborum, unde iusto ex inventore voluptatem! Illo, repellendus.</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- .content -->	
+	</div><!-- .main -->
+	<footer class="footer clearfix">
+		<div class="footer__row">
+			<div class="footer__col-50 footer__first-col">
+				<div class="footer__row">
+					<div class="footer__col-25">
+						<ul class="list-col">
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item1">Item 1</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item2">Item 2</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item3">Item 3</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item4">Item 4</a></li>
+						</ul>	
+					</div>
+					<div class="footer__col-25">
+						<ul class="list-col">
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item5">Item 5</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item6">Item 6</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item7">Item 7</a></li>
+						</ul>	
+					</div>
+					<div class="footer__col-25">
+						<ul class="list-col">
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item8">Item 8</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item9">Item 9</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item10">Item 10</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item11">Item 11</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item12">Item 12</a></li>
+						</ul>	
+					</div>
+					<div class="footer__col-25">
+						<ul class="list-col">
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item13">Item 13</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item14">Item 14</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item15">Item 15</a></li>
+							<li class="list-col__item"><a class="footer__first-col-link" href="#item16">Item 16</a></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="footer__col-50 footer__second-col">
+				<div class="footer__row">
+					<div class="footer__col-50">
+						<a class="footer__second-col-link" href="#link1">Link 1</a>
+						<a class="footer__second-col-link" href="#link2">Link 2</a>
+						<a class="footer__second-col-link" href="#link3">Link 3</a>
+					</div>
+					<div class="footer__col-50 footer__right">'
+						<a href="#" class="footer__second-col-ico-link" target="_blank"><i class="ico ico_js"></i></a>
+						<a href="#" class="footer__second-col-ico-link" target="_blank"><i class="ico ico_html"></i></a>
+						<a href="#" class="footer__second-col-ico-link" target="_blank"><i class="ico ico_css"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- .footer -->
+</body>
+</html>
